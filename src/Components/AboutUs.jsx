@@ -2,18 +2,17 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-24 bg-gray-50 font-montserrat px-32">
+    <section id="about" className="py-24 bg-gray-50 font-montserrat px-6 md:px-32">
       <div className="container mx-auto flex flex-col md:flex-row items-center px-6 gap-16">
-        
-        {/* Left: Image */}
-        <div className="flex-1 relative">
-          <div className="overflow-hidden rounded-lg shadow-2xl">
-                  <img 
-          src="https://images.unsplash.com/photo-1600962815703-7b2c32b23e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-          alt="About Us"
-          className="w-full h-full object-cover"
-        />
 
+        {/* Left: Image */}
+        <div className="flex-1 relative mb-8 md:mb-0">
+          <div className="overflow-hidden rounded-lg shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1600962815703-7b2c32b23e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+              alt="About Us"
+              className="w-full h-full object-cover"
+            />
           </div>
           {/* Decorative border */}
           <div className="absolute top-4 left-4 w-full h-full border-4 border-yellow-400 rounded-lg -z-10"></div>

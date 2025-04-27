@@ -3,7 +3,7 @@ import Navbar from './Components/navbar';
 import Hero from './Components/Hero';
 import AboutUs from './Components/AboutUs';
 import Services from './Components/Services';
-import Projects from './Components/Projects';
+
 
 function App() {
   return (
@@ -12,9 +12,7 @@ function App() {
       <Hero />
       <AboutUs />
       <Services />
-      <Projects />
-      
-    </div>
+     </div>
   );
 }
 
