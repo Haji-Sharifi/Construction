@@ -15,7 +15,7 @@ const AnimatedHamburger = () => {
       >
         {/* Top Bar */}
         <div
-          className={`h-1 w-8 bg-current transition-all duration-300 ease-in-out transform ${
+          className={`h-1 w-8 bg-current transition-all duration-200 ease-in-out transform  ${
             isOpen ? "rotate-45 translate-y-2" : ""
           }`}
         ></div>

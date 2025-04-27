@@ -23,7 +23,7 @@ const NavbarComponent = () => {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-200 lg:px-22 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      } ${isOpen ? 'bg-yellow-50' : ''}`} // Apply background color when menu is open on mobile
+      } ${isOpen ? 'bg-white' : ''}`} // Apply background color when menu is open on mobile
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4 font-montserrat">
         {/* Logo */}
@@ -53,7 +53,7 @@ const NavbarComponent = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-yellow-50 bg-opacity-90 text-white`}
+        className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-white bg-opacity-90 text-white`}
       >
         <div className="flex flex-col items-center space-y-4 py-4">
           <a href="#home" className="hover:text-yellow-50 text-black" onClick={handleLinkClick}>Home</a>
