@@ -1,4 +1,5 @@
 import React from 'react';
+import img from '../Images/watch.jpg'
 
 const AboutUs = () => {
   return (
@@ -9,7 +10,7 @@ const AboutUs = () => {
         <div className="flex-1 relative mb-8 md:mb-0">
           <div className="overflow-hidden rounded-lg shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1600962815703-7b2c32b23e0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+              src={img}
               alt="About Us"
               className="w-full h-full object-cover"
             />
