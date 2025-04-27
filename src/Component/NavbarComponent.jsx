@@ -33,11 +33,11 @@ const NavbarComponent = () => {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-8 text-lg font-semibold">
-          <a href="#home" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Home</a>
-          <a href="#about" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>About</a>
-          <a href="#services" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Services</a>
-          <a href="#projects" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Projects</a>
-          <a href="#contact" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Contact</a>
+          <a href="#home" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-500' : 'text-white'}`}>Home</a>
+          <a href="#about" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-500' : 'text-white'}`}>About</a>
+          <a href="#services" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-500' : 'text-white'}`}>Services</a>
+          <a href="#projects" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-500' : 'text-white'}`}>Projects</a>
+          <a href="#contact" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-500' : 'text-white'}`}>Contact</a>
         </div>
 
         {/* Hamburger Icon for Mobile */}
