@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from './Components/navbar';
-import Hero from './Components/Hero';
-import AboutUs from './Components/AboutUs';
-import Services from './Components/Services';
+import Navbar from './components/navbar';
+import Hero from './components/Hero';
+import AboutUs from './components/AboutUs';
+import Services from './components/Services';
 
 
 function App() {
