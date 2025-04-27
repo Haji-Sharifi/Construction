@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Components/navbar';
+import NavbarComponent from './components/NavbarComponent';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
@@ -8,7 +8,7 @@ import Services from './components/Services';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavbarComponent />
       <Hero />
       <AboutUs />
       <Services />
