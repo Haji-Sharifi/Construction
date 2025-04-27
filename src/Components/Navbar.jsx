@@ -1,43 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 px-18">
-      <div className="container mx-auto flex items-center justify-between p-4">
-        <div className="text-2xl font-bold text-yellow-600">
+    <nav className={`fixed top-0 px-20 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+      <div className="container mx-auto flex items-center justify-between px-6 py-4 font-montserrat">
+        <div className="text-2xl font-bold text-yellow-500">
           BuildCo
         </div>
-        <div className="hidden md:flex space-x-8">
-          <a href="#home" className="text-gray-700 hover:text-yellow-600">Home</a>
-          <a href="#about" className="text-gray-700 hover:text-yellow-600">About</a>
-          <a href="#services" className="text-gray-700 hover:text-yellow-600">Services</a>
-          <a href="#projects" className="text-gray-700 hover:text-yellow-600">Projects</a>
-          <a href="#contact" className="text-gray-700 hover:text-yellow-600">Contact</a>
-        </div>
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <svg className="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+        <div className="hidden md:flex space-x-8 text-lg font-semibold">
+          <a href="#home" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Home</a>
+          <a href="#about" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>About</a>
+          <a href="#services" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Services</a>
+          <a href="#projects" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Projects</a>
+          <a href="#contact" className={`hover:text-yellow-500 ${isScrolled ? 'text-gray-800' : 'text-white'}`}>Contact</a>
         </div>
       </div>
-
-      {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 space-y-2">
-          <a href="#home" className="block text-gray-700 hover:text-yellow-600">Home</a>
-          <a href="#about" className="block text-gray-700 hover:text-yellow-600">About</a>
-          <a href="#services" className="block text-gray-700 hover:text-yellow-600">Services</a>
-          <a href="#projects" className="block text-gray-700 hover:text-yellow-600">Projects</a>
-          <a href="#contact" className="block text-gray-700 hover:text-yellow-600">Contact</a>
-        </div>
-      )}
     </nav>
   );
 };
