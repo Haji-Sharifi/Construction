@@ -22,8 +22,8 @@ const NavbarComponent = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-200 lg:px-22 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      } ${isOpen ? 'bg-white' : ''}`} // Apply background color when menu is open on mobile
+        isScrolled ? 'bg-gray-900 shadow-md' : 'bg-transparent'
+      } ${isOpen ? 'bg-gray-900' : ''}`} // Apply background color when menu is open on mobile
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4 font-montserrat">
         {/* Logo */}
@@ -53,14 +53,14 @@ const NavbarComponent = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-white bg-opacity-90 text-white`}
+        className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-gray-900 bg-opacity-90 text-white`}
       >
         <div className="flex flex-col items-center space-y-4 py-4">
-          <a href="#home" className="hover:text-yellow-50 text-black" onClick={handleLinkClick}>Home</a>
-          <a href="#about" className="hover:text-yellow-500 text-black" onClick={handleLinkClick}>About</a>
-          <a href="#services" className="hover:text-yellow-500 text-black" onClick={handleLinkClick}>Services</a>
-          <a href="#projects" className="hover:text-yellow-500 text-black" onClick={handleLinkClick}>Projects</a>
-          <a href="#contact" className="hover:text-yellow-500 text-black" onClick={handleLinkClick}>Contact</a>
+          <a href="#home" className="hover:text-yellow-500" onClick={handleLinkClick}>Home</a>
+          <a href="#about" className="hover:text-yellow-500" onClick={handleLinkClick}>About</a>
+          <a href="#services" className="hover:text-yellow-500" onClick={handleLinkClick}>Services</a>
+          <a href="#projects" className="hover:text-yellow-500" onClick={handleLinkClick}>Projects</a>
+          <a href="#contact" className="hover:text-yellow-500" onClick={handleLinkClick}>Contact</a>
         </div>
       </div>
     </nav>
