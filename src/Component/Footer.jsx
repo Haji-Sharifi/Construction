@@ -46,9 +46,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-yellow-400 mb-3">Contact</h4>
             <ul>
-              <li><a href="tel:+1234567890" className="text-gray-400 hover:text-yellow-400">+1 (234) 567-890</a></li>
-              <li><a href="mailto:info@buildco.com" className="text-gray-400 hover:text-yellow-400">info@buildco.com</a></li>
-              <li><a href="https://goo.gl/maps/xyz" className="text-gray-400 hover:text-yellow-400">1234 Street, City, Country</a></li>
+              <li><a href="tel:+1234567890" className="text-gray-400 hover:text-yellow-400">+93 796231400</a></li>
+              <li><a href="mailto:info@buildco.com" className="text-gray-400 hover:text-yellow-400">masihwaizi@gmail.com</a></li>
+              <li><a href="https://goo.gl/maps/xyz" className="text-gray-400 hover:text-yellow-400">Khair Khana - Haji Chaman Main rood, Kabul, Afghanistan</a></li>
             </ul>
           </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold text-yellow-400 mb-3">Subscribe</h4>
-            <p className="text-gray-400 mb-3">Get the latest updates and offers from BuildCo.</p>
+            <p className="text-gray-400 mb-3">Get the latest updates and offers from our company.</p>
             <input
               type="email"
               placeholder="Enter your email"
