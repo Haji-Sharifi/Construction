@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../Images/watch.jpg'
+import img from '../Images/Construction-Management-Park-University-min.avif'
 
 const projects = [
   {
