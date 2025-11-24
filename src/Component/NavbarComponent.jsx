@@ -28,7 +28,7 @@ const NavbarComponent = () => {
       <div className="container mx-auto flex items-center justify-between px-6 py-4 font-montserrat">
         {/* Logo */}
         <div className="text-2xl font-bold text-yellow-500">
-          BuildCo
+          WaiziCoLTD
         </div>
 
         {/* Desktop Navigation Links */}
